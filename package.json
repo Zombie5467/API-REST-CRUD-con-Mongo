@@ -1,0 +1,28 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node \"src/Semana 04/app.js\"",
+    "dev": "nodemon \"src/Semana 04/app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "chalk": "5.4.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "17.2.1",
+    "express": "4.21.2",
+    "jose": "6.0.12",
+    "json-server": "^1.0.0-beta.3",
+    "mongoose": "^8.17.0",
+    "nanoid": "^5.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.10"
+  }
+}
