@@ -20,15 +20,15 @@ El proyecto incluye configuración para **Docker** y está desplegado en **Railw
 
 
 ### `GET /books` → Lista todos los libros
-![GET /books en Postman](images/CRUD Books_GET_ALL.jpg)  
-![GET /books en Postman](images/CRUD Books_GET_ALL_API.jpg)  
+![GET /books en Postman](./images/CRUD_Books_GET_ALL.jpg)  
+![GET /books en Postman](./images/CRUD_Books_GET_ALL_API.jpg)  
 URL: [http://api-rest-crud-con-mongo-production.up.railway.app/books](http://api-rest-crud-con-mongo-production.up.railway.app/books)
 
 ---
 
 ### `POST /books` → Crea un libro
-![POST /books en Postman](images/CRUD Books_POST.jpg)
-![POST /books en Postman](images/CRUD Books_POST_API.jpg)
+![POST /books en Postman](./images/CRUD_Books_POST.jpg)
+![POST /books en Postman](./images/CRUD_Books_POST_API.jpg)
 URL: [http://api-rest-crud-con-mongo-production.up.railway.app/books](http://api-rest-crud-con-mongo-production.up.railway.app/books)  
 
 ⚠️ Nota: Para crear un libro, todos los campos (`title`, `author`, `genre`, `year`) son obligatorios. Si falta alguno, la API devuelve un mensaje de error.
@@ -37,15 +37,14 @@ URL: [http://api-rest-crud-con-mongo-production.up.railway.app/books](http://api
 
 
 ### `PATCH /books/:id` → Actualiza parcialmente
-![PUT /books/:id en Postman](images/CRUD Books_PATCH_PARAMS.jpg) 
-![PUT /books/:id en Postman](images/CRUD Books_PATCH_PARAMS_2.jpg) 
-![PUT /books/:id en Postman](images/CRUD Books_PATCH_API.jpg)  
+![PUT /books/:id en Postman](./images/CRUD_Books_PATCH_PARAMS.jpg) 
+![PUT /books/:id en Postman](./images/CRUD_Books_PATCH_PARAMS_2.jpg) 
+![PUT /books/:id en Postman](./images/CRUD_Books_PATCH_API.jpg)  
 URL: [http://api-rest-crud-con-mongo-production.up.railway.app/books/:id](http://api-rest-crud-con-mongo-production.up.railway.app/books/:id)  
 
 ---
 
 ### `PUT /books/:id` → Actualiza un libro
-![PUT /books/:id en Postman](images/put-books.png)  
 URL: [http://api-rest-crud-con-mongo-production.up.railway.app/books/:id](http://api-rest-crud-con-mongo-production.up.railway.app/books/:id)  
 
 ⚠️ Nota: Reemplazar `:id` por un ID válido de un libro existente. Todos los campos deben enviarse completos para actualizar correctamente.  
@@ -53,13 +52,13 @@ Ejemplo: `3720490020394`
 
 ---
 ### `GET /books/:id` → Busca un libro
-![PUT /books/:id en Postman](images/CRUD Books_GET_BY_ID.jpg)  
+![PUT /books/:id en Postman](./images/CRUD_Books_GET_BY_ID.jpg)  
 URL: [http://api-rest-crud-con-mongo-production.up.railway.app/books/:id](http://api-rest-crud-con-mongo-production.up.railway.app/books/:id)  
 
 ---
 
 ### `DELETE /books/:id` → Elimina un libro
-![DELETE /books/:id en Postman](images/CRUD Books_DELETE.jpg)  
+![DELETE /books/:id en Postman](./images/CRUD_Books_DELETE.jpg)  
 URL: [http://api-rest-crud-con-mongo-production.up.railway.app/books/:id](http://api-rest-crud-con-mongo-production.up.railway.app/books/:id)  
 
 ⚠️ Nota: Reemplazar `:id` por un ID válido de un libro existente. Si el `id` no existe, la API devolverá un error indicando que el libro no fue encontrado.
@@ -90,3 +89,6 @@ URL: [http://api-rest-crud-con-mongo-production.up.railway.app/books/:id](http:/
 - Corregida la conexión a MongoDB: se usa `MONGO_URL` del `.env` en lugar de `MONGO_DB_URL` para que Mongoose reciba la URI correcta.
  
 [Ver detalles completos](./CHANGELOG.md)
+
+----------
+> Written with [StackEdit](https://stackedit.io/).
